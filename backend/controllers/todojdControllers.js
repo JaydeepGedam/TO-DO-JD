@@ -17,8 +17,7 @@ export const createTodo = async (req, res) => {
         const {title, description, completed} = req.body;
         const newTask = new todojdSchema({title, description, completed});
         await newTask.save();
-        res.status(201).json(newTask);
-    }
+        res.status(201).json({status: 201, data: newTask});    }
     catch(err){
         res.status(409).json({message: err.message});
     }
