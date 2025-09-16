@@ -1,13 +1,18 @@
 import React from 'react'
-import {Plus} from 'lucide-react'
+import {Plus, Check} from 'lucide-react'
 const navbar = () => {
     return (
-        <div className="navbar bg-base-200 shadow-sm rounded-md">
-            <div className="navbar-start">
+        <div className="navbar flex justify-between bg-base-200 shadow-sm rounded-md px-8">
+            <div className="">
                 <a href='/' className="btn btn-ghost text-xl">Do or Die</a>
             </div>
-            <div className="navbar-end">
-                <a href="/create" className="btn btn-primary"><Plus size={20} /> New Task</a>
+            <div className="gap-3 flex">
+                <div>
+                    <a href="/completed" className="btn btn-primary"><Check size={20} />Completed</a>
+                </div>
+                <div>
+                    <a href="/create" className="btn btn-primary"><Plus size={20} /> New</a>
+                </div>
             </div>
         </div>
     )

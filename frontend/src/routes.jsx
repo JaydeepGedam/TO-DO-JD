@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import GetAllTodos from './pages/getAllTodos.jsx';
 import CreateNewTodo from './pages/createNewTodo.jsx';
+import UpdateTodo from './pages/UpdateTodo.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
         path: 'create',
         element: <CreateNewTodo />,
       },
+      {
+        path: 'update',
+        element: <UpdateTodo />,
+      }
     ],
   },
 ]);

@@ -23,9 +23,12 @@ const CreateTodoForm = () => {
                 description: description
             })
             if(response.status === 201){
-                toast.success("To-Do Created Successfully");
+                toast.success("To-Do Created Successfully");                
                 setTitle("");
                 setDescription("");
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 1000);
             }
             else{
                 toast.error("Failed to create To-Do");
