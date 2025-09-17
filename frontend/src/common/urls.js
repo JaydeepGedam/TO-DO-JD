@@ -1,4 +1,4 @@
-const BaseURL = 'http://localhost:5000/';
+const BaseURL = 'https://to-do-jd-backend.onrender.com/';
 
 //all todos
 export const getAllTodosURL = BaseURL + 'todos';
