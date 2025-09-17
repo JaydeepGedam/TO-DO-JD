@@ -7,9 +7,9 @@ const navbar = () => {
                 <a href='/' className="btn btn-ghost text-xl">Do or Die</a>
             </div>
             <div className="gap-3 flex">
-                <div>
+                {/* <div>
                     <a href="/completed" className="btn btn-primary"><Check size={20} />Completed</a>
-                </div>
+                </div> */}
                 <div>
                     <a href="/create" className="btn btn-primary"><Plus size={20} /> New</a>
                 </div>
