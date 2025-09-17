@@ -46,12 +46,12 @@ const TodoCard = ({id, title, description, completed}) => {
                 </div>               
                 <h2 className="card-title">{title}</h2>
                 <p>{description}</p>
-                {!isCompleted &&
                 <div className="card-actions justify-end">
-                    <SquarePen onClick={() => window.location.href = `/update?id=${id}&title=${title}&description=${description}`} cursor="pointer"/>                    
+                    {!isCompleted &&
+                        <SquarePen onClick={() => window.location.href = `/update?id=${id}&title=${title}&description=${description}`} cursor="pointer"/>                    
+                     }
                      <Trash onClick={handleDelete} cursor="pointer"/>
                 </div>
-                }
             </div>
         </div>
     )
